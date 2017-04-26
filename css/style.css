@@ -1,0 +1,312 @@
+/*
+Theme Name: ploty-szablon
+Theme URI: adres skąd można pobrać nasz szablon
+Description: opis naszego szablonu
+Version: wersja
+Author: Dawid
+Author URI: nasza strona www
+*/
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+
+.navbar-brand {
+  padding: 0px;
+
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+body {
+    background-size: cover;
+    background-color: #cccccc;
+
+    background: url('../images/background.jpg') no-repeat center center fixed;
+}
+
+.header {
+    background-image: url('../images/intro-background.jpg');
+    min-height: 490px;
+    background-size: cover;
+    background-color: #cccccc;
+    margin-top: 90px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.h2SliderBox {
+    color: #69400b;
+    font-weight: 800;
+    font-size: 41px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.zaletyTxt {
+    color:white;
+    font-weight:600;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.bottom-right h3 {
+    text-align:left;
+}
+
+nav li {
+    background-color: #ab7442;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.nav>li>a {
+    color: white;
+    position: relative;
+    display: block;
+    padding: 10px 26px;
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+    .nav>li>a {
+         padding: 10px 9px;
+    }
+}
+
+
+
+
+
+.sectionsett {
+    padding:20px;
+}
+
+.visu-section {
+    background-color: #f6f6f6;
+    margin-top: 40px;
+}
+
+.visu-section h3 {
+    margin-top:30px;
+}
+
+
+
+.sectionsett p {
+    margin-bottom:20px;
+}
+
+.about-section {
+    background-color:#f1f1f1;
+}
+
+
+.contact-section {
+/*    height: 100%;*/
+    /*    padding-top: 150px;*/
+        background-color: #b18857;
+        margin-bottom: 50px;
+}
+
+.bottom-left {
+     color: white;
+}
+
+.bottom-left h2 {
+     color: black;
+}
+
+.bottom-right {
+
+    color: white;
+}
+
+.visu-section img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-box {
+    background: rgba(255, 255, 255, 0.76);
+    margin-top: 100px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.belka {
+    height: 23px;
+    width: auto;
+    background-color: #b18857;
+    opacity: 1;
+}
+
+.slider-box p {
+    margin-top:20px;
+}
+
+.button {
+    display:inline-block;
+   color:black;
+    float: right;
+    padding: 0 40px;
+    font-size: 20px;
+    border: 5px solid #b18857;
+
+}
+
+.button-bottom {
+    display: inline-block;
+    color: white;
+    float: right;
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: #b18857;
+    margin-top: 20px;
+
+}
+
+
+hr {
+       height: 13px;
+    width: 150px;
+    background: #ecb23c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.visu-hr {
+    height: 13px;
+    width: 75px;
+    background: #b18857;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-collapse li:hover {
+    box-shadow: inset 0px -9px 0px 0px rgb(236, 178, 60);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Hover effect*/
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #ab7442;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    overflow: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
+}
+
+.hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/*End Hover effect*/
