@@ -11,13 +11,13 @@
                 </h2>
                 
                   
-                        <div class="col-lg-12  zaletyTxt">
+                        <div class="col-lg-12  zaletyTxt text-center">
                           <?php the_field('zaleta1', 20); ?>
                         </div>
-                        <div class="col-lg-12  zaletyTxt">
+                        <div class="col-lg-12  zaletyTxt text-center">
                                 <?php the_field('zaleta2', 20); ?>
                         </div>
-                        <div class="col-lg-12  zaletyTxt">
+                        <div class="col-lg-12  zaletyTxt text-center">
                                 <?php the_field('zaleta3', 20); ?>
                          </div>
                    
